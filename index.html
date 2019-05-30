@@ -12,12 +12,62 @@
 <body>
 
   <div class="app">
+    <div class="background-container">
+      <img src="./backgrounds/leaves.jpg" alt="meditating woman" id="background">
+    </div>
+    <!-- TIme Select -->
     <div class="time-select">
-      <div class="player-container">
-        <div class="sound-picker">
-
+      <div class="time-card">
+        <h3 class="time-card__title">Focus</h3>
+        <div class="time-card__info">
+          <p>2 minutes</p>
+          <p>Work and create</p>
         </div>
+        <button data-time="120" class="time-card__button">Play</button>
       </div>
+
+      <div class="time-card">
+        <h3 class="time-card__title">Sleep</h3>
+        <div class="time-card__info">
+          <p>5 minutes</p>
+          <p>Time for bed</p>
+        </div>
+        <button data-time="300" class="time-card__button">5 minutes</button>
+      </div>
+
+      <div class="time-card">
+        <h3 class="time-card__title">Deep Sleep</h3>
+        <div class="time-card__info">
+          <p>10 minutes</p>
+          <p>For deep sleeprs</p>
+        </div>
+        <button data-time="600" class="time-card__button">10 minutes</button>
+      </div>
+    </div>
+    <!-- Player Controls -->
+    <div class="player-container">
+      <audio class="song">
+        <source src="./sounds/rain.mp3">
+      </audio>
+      <img src="./svg/play.svg" alt="play" class="play">
+      <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20" />
+      </svg>
+      <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20" />
+      </svg>
+      <h3 class="time-display">0:00</h3>
+    </div>
+    <!-- Souncd Picker -->
+    <div class="sound-picker">
+      <button data-sound="./sounds/rain.mp3" id="rain-sound">
+        <img src="./svg/rain.svg" alt="rain">
+      </button>
+      <button data-sound="./sounds/beach.mp3" id="beach-sound">
+        <img src="./svg/beach.svg" alt="beach">
+      </button>
     </div>
   </div>
 
