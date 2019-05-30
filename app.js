@@ -42,7 +42,7 @@ const app = () => {
   const rainSound = document.getElementById('rain-sound')
 
   rainSound.addEventListener('click', () => {
-    background.src = './backgrounds/jellyfish-1.jpg'
+    background.src = './backgrounds/rain.jpg'
   })
 
   //PLay Soung

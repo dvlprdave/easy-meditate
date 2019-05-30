@@ -15,35 +15,6 @@
     <div class="background-container">
       <img src="./backgrounds/leaves.jpg" alt="meditating woman" id="background">
     </div>
-    <!-- TIme Select -->
-    <div class="time-select">
-      <div class="time-card">
-        <h3 class="time-card__title">Focus</h3>
-        <div class="time-card__info">
-          <p>2 minutes</p>
-          <p>Work and create</p>
-        </div>
-        <button data-time="120" class="time-card__button">Play</button>
-      </div>
-
-      <div class="time-card">
-        <h3 class="time-card__title">Sleep</h3>
-        <div class="time-card__info">
-          <p>5 minutes</p>
-          <p>Time for bed</p>
-        </div>
-        <button data-time="300" class="time-card__button">5 minutes</button>
-      </div>
-
-      <div class="time-card">
-        <h3 class="time-card__title">Deep Sleep</h3>
-        <div class="time-card__info">
-          <p>10 minutes</p>
-          <p>For deep sleeprs</p>
-        </div>
-        <button data-time="600" class="time-card__button">10 minutes</button>
-      </div>
-    </div>
     <!-- Player Controls -->
     <div class="player-container">
       <audio class="song">
@@ -69,6 +40,36 @@
         <img src="./svg/beach.svg" alt="beach">
       </button>
     </div>
+    <!-- TIme Select -->
+    <div class="time-select">
+      <div class="time-card__wrapper">
+        <article class="time-card">
+          <h3 class="time-card__title">Focus</h3>
+          <div class="time-card__info">
+            <p>Work and create</p>
+            <button data-time="120" class="time-card__button focus">2 minutes</button>
+          </div>
+        </article>
+
+        <article class="time-card">
+          <h3 class="time-card__title">Sleep</h3>
+          <div class="time-card__info">
+            <p>Time for bed</p>
+            <button data-time="300" class="time-card__button sleep">5 minutes</button>
+          </div>
+        </article>
+
+        <article class="time-card">
+          <h3 class="time-card__title">Hybernate</h3>
+          <div class="time-card__info">
+            <p>For deep sleeprs</p>
+            <button data-time="600" class="time-card__button deep-sleep">10 minutes</button>
+          </div>
+        </article>
+      </div>
+    </div>
+
+
   </div>
 
   <script src="./app.js"></script>
