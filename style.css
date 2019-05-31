@@ -86,11 +86,11 @@
 }
 
 .sound-picker button:nth-child(1) {
-  background: #497821;
+  background: white;
 }
 
 .sound-picker button:nth-child(2) {
-  background: #a14f49;
+  background: grey;
 }
 
 .sound-picker button img {
@@ -114,7 +114,6 @@
 .time-card {
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
   border-radius: 5px;
   height: 100%;
   width: 150px;
@@ -135,7 +134,7 @@
 }
 
 .time-card__info {
-  color: grey;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -154,12 +153,22 @@
   font-size: 1rem;
   transition: all 0.5s ease;
   padding: 5px;
-  /* border: 1px black solid; */
+  border: none;
   border-radius: 5px;
 }
 
 .focus {
   background-color: pink;
+}
+
+#time-card__focus {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+#time-card__sleep {
+  background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+}
+#time-card__hybernate {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
 .sleep {

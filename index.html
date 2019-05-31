@@ -33,17 +33,17 @@
     </div>
     <!-- Souncd Picker -->
     <div class="sound-picker">
-      <button data-sound="./sounds/rain.mp3" id="rain-sound">
-        <img src="./svg/rain.svg" alt="rain">
+      <button data-image="./backgrounds/rain.jpg" data-sound="./sounds/rain.mp3" id="rain-sound">
+        <img src="./svg/water.svg" alt="rain">
       </button>
-      <button data-sound="./sounds/beach.mp3" id="beach-sound">
-        <img src="./svg/beach.svg" alt="beach">
+      <button data-image="./backgrounds/waves.jpg" data-sound="./sounds/beach.mp3" id="beach-sound">
+        <img src="./svg/wave.svg" alt="beach">
       </button>
     </div>
     <!-- TIme Select -->
     <div class="time-select">
       <div class="time-card__wrapper">
-        <article class="time-card">
+        <article class="time-card" id="time-card__focus">
           <h3 class="time-card__title">Focus</h3>
           <div class="time-card__info">
             <p>Work and create</p>
@@ -51,7 +51,7 @@
           </div>
         </article>
 
-        <article class="time-card">
+        <article class="time-card" id="time-card__sleep">
           <h3 class="time-card__title">Sleep</h3>
           <div class="time-card__info">
             <p>Time for bed</p>
@@ -59,7 +59,7 @@
           </div>
         </article>
 
-        <article class="time-card">
+        <article class="time-card" id="time-card__hybernate">
           <h3 class="time-card__title">Hybernate</h3>
           <div class="time-card__info">
             <p>For deep sleeprs</p>

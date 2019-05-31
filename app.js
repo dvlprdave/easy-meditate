@@ -2,7 +2,6 @@ const app = () => {
   const song = document.querySelector('.song')
   const play = document.querySelector('.play')
   const outline = document.querySelector('.moving-outline circle')
-  const video = document.querySelector('.vid-container video')
   const background = document.getElementById('background')
 
   //Sounds
@@ -33,16 +32,9 @@ const app = () => {
   sounds.forEach(sound => {
     sound.addEventListener('click', function () {
       song.src = this.getAttribute('data-sound')
-      // video.src = this.getAttribute('data-video')
-      // background.src = this.getAttribute('data-image')
+      background.src = this.getAttribute('data-image')
       checkPlaying(song)
     })
-  })
-
-  const rainSound = document.getElementById('rain-sound')
-
-  rainSound.addEventListener('click', () => {
-    background.src = './backgrounds/rain.jpg'
   })
 
   //PLay Soung
@@ -68,14 +60,13 @@ const app = () => {
     let progress = outlineLength - (currentTime / fakeDuration) * outlineLength
     outline.style.strokeDashoffset = progress
 
-    //Anime text
+    //Animate text
     timeDisplay.textContent = `${minutes}:${seconds}`
 
     if (currentTime >= fakeDuration) {
       song.pause()
       song.currentTime = 0
       play.src = './svg/play.svg'
-      video.pause()
     }
   }
 }
